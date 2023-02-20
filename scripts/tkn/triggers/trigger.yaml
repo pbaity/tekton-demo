@@ -1,7 +1,7 @@
 apiVersion: triggers.tekton.dev/v1beta1
 kind: Trigger
 metadata:
-  name: tekton-demo
+  name: tekton-demo-trigger
 spec:
   serviceAccountName: pipeline
   interceptors:
