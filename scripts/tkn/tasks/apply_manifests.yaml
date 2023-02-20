@@ -18,6 +18,5 @@ spec:
       args:
         - |-
           echo Applying manifests in $(inputs.params.manifest_dir) directory
-          ls -al
           oc apply -f $(inputs.params.manifest_dir)
           echo -----------------------------------
