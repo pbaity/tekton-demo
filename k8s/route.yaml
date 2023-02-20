@@ -1,0 +1,13 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: tekton-demo-app
+  name: tekton-demo-app
+spec:
+  port:
+    targetPort: 8080-tcp
+  to:
+    kind: Service
+    name: tekton-demo-app
+    weight: 100
