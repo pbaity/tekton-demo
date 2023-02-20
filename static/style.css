@@ -1,0 +1,27 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,600);
+
+*{
+  box-sizing:border-box;
+}
+html,body{
+  margin: 0;
+  padding: 0;
+  color: #F7F8F9;
+  height: 100vh;
+  font-family: 'Open Sans';
+}
+
+#hostname-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  font-size: 2em;
+  text-shadow: 2px 1px 8px black;
+}
+
+#hostname {
+  padding-left: 0.5em;
+  font-weight: bold;
+}

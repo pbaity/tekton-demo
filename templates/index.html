@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tekton Demo</title>
+    <base href="/index.html">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <link rel='stylesheet' href="{{ url_for('static',filename='style.css') }}" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+  <body style="background-color: {{color}};">
+    <div id="hostname-container">
+      Hello from <span id="hostname">{{hostname}}!</span>
+    </div>
+  </body>
+</html>
