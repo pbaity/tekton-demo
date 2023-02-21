@@ -3,12 +3,28 @@
 from flask import Flask, render_template, make_response
 import os
 import socket
+import random
 
-color = os.getenv('COLOR', '#006699')
+colors = [
+    "black",
+    "blue",
+    "brown",
+    "darkgray",
+    "darkgreen",
+    "darkmagenta",
+    "deepskyblue",
+    "dodgerblue",
+    "forestgreen",
+    "gold",
+    "lightcoral",
+    "red",
+    "teal",
+]
+
+color = random.choice(colors)
 hostname = socket.gethostname()
 
 app = Flask(__name__)
-
 
 @app.route("/", methods=['GET'])
 def result():
