@@ -9,7 +9,7 @@ colors = [
     "black",
     "blue",
     "brown",
-    "darkgray",
+    "darkgrey",
     "darkgreen",
     "darkmagenta",
     "deepskyblue",
